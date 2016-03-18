@@ -1,0 +1,118 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:baselineAligned="true">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Attraction Name"
+            android:id="@+id/attractionName"
+            android:layout_below="@+id/editText3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@color/bright_foreground_disabled_material_dark"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:id="@+id/attractionAddress"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:shadowColor="@color/bright_foreground_disabled_material_dark"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Telephone Number"
+            android:id="@+id/attractionPhone"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_marginTop="50dp"
+            android:shadowColor="@color/bright_foreground_disabled_material_dark"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Website"
+            android:id="@+id/attractionWebsite"
+            android:layout_above="@+id/editText4"
+            android:layout_alignStart="@+id/saveButton"
+            android:layout_marginTop="50dp"
+            android:shadowColor="@color/bright_foreground_disabled_material_dark"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Opening time"
+            android:id="@+id/attractionOpening"
+            android:layout_above="@+id/editText4"
+            android:layout_alignStart="@+id/saveButton"
+            android:layout_marginTop="50dp"
+            android:shadowColor="@color/bright_foreground_disabled_material_dark"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Closing time"
+            android:id="@+id/attractionClosing"
+            android:layout_above="@+id/editText4"
+            android:layout_alignStart="@+id/saveButton"
+            android:layout_marginTop="50dp"
+            android:shadowColor="@color/bright_foreground_disabled_material_dark"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_above="@+id/saveButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:numStars="4"
+            android:stepSize="1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:id="@+id/attractionDescription"
+            android:layout_above="@+id/editText4"
+            android:layout_alignStart="@+id/saveButton"
+            android:layout_marginTop="50dp"
+            android:shadowColor="@color/bright_foreground_disabled_material_dark"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <Button
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:text="Ok"
+               android:id="@+id/saveButton"
+               android:onClick="sendDataBack"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentStart="true" />
+
+           <Button
+               android:layout_width="100dp"
+               android:layout_height="50dp"
+               android:text="Cancel"
+               android:id="@+id/cancelButton"
+               android:onClick="cancel"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true" />
+
+       </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
